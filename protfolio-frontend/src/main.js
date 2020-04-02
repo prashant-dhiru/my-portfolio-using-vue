@@ -10,6 +10,7 @@ Vue.use(MdContent)
 Vue.use(MdCard)
 Vue.use(MdIcon)
 Vue.use(MdAvatar)
+// Vue.use(MdTheme)
 
 new Vue({
   render: h => h(App),
