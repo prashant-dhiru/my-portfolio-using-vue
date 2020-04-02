@@ -64,6 +64,7 @@ export default {
 <style scoped>
 #outer{
   padding: 30px;
+  padding-bottom: 10px;
 }
 .md-card-media img{
   object-fit:cover;

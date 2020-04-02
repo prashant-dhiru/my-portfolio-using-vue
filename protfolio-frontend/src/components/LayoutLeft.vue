@@ -1,16 +1,18 @@
 <template>
   <div class="hello">
-    <CardIntro> </CardIntro>
+    <card-intro/>
+    <card-social-profile></card-social-profile>
   </div>
 </template>
 
 <script>
 import CardIntro from "./LayoutLeftComponents/CardIntro.vue"
-
+import CardSocialProfile from './LayoutLeftComponents/CardSocialProfile.vue'
 export default {
   name: 'LayoutLeft',
   components : {
-    CardIntro
+    CardIntro,
+    CardSocialProfile
   }
 }
 
