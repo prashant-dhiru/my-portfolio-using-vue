@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="home">
     <header-material></header-material>
     <div class="md-layout">
       <div class="md-layout-item md-small-size-100 md-size-25">
@@ -13,30 +13,21 @@
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-import HeaderMaterial from './components/HeaderMaterial.vue'
-import LayoutLeft from './components/LayoutLeft.vue'
+// @ is an alias to /src
+// import HelloWorld from '@/components/HelloWorld.vue'
+import HeaderMaterial from '@/components/HeaderMaterial.vue'
+import LayoutLeft from '@/components/LayoutLeft.vue'
 
 export default {
-  name: 'App',
+  name: 'Home',
   components: {
     // HelloWorld,
     HeaderMaterial,
     LayoutLeft
-  } 
+  }
 }
 </script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 0px;
-  /* background:lightgrey; */
-}
 .md-layout{
   padding-left:30px;
   padding-right: 30px;
