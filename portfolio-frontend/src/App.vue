@@ -1,13 +1,32 @@
 <template>
   <div id="app">
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
+    <header-material></header-material>
+    <div class="md-layout">
+      <div class="md-layout-item md-small-size-100 md-size-25">
+        <layout-left></layout-left>
+      </div>  
+      <div class="md-layout-item">
+        <HelloWorld msg="Welcome to Your Vue.js App"/>
+      </div>  
+    </div>
     <router-view/>
   </div>
 </template>
+<script>
 
+import HeaderMaterial from '@/components/HeaderMaterial.vue'
+import LayoutLeft from '@/components/LayoutLeft.vue'
+import HelloWorld from '@/components/HelloWorld.vue'
+
+export default {
+  name: 'App',
+  components: {
+    HelloWorld,
+    HeaderMaterial,
+    LayoutLeft
+  }
+}
+</script>>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
