@@ -1,10 +1,21 @@
 <template>
-  <div>hello</div>
+  <div>{{project}}</div>
 </template>
 
 <script>
+import {db} from '@/firebase'
 export default {
-  name: 'MainComponet'
+  name: 'MainComponet',
+  data(){
+    return{
+      project: []
+    }
+  },
+  firestore(){
+    return{
+      project: db.collection('my-projects')
+    }
+  }
 }
 </script>
 

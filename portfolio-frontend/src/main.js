@@ -7,7 +7,10 @@ import 'vue-material/dist/vue-material.min.css'
 import 'vue-material/dist/theme/default.css'
 import { MdButton, MdContent, MdCard, MdIcon, MdAvatar,MdList,MdDivider,MdTabs} from 'vue-material/dist/components'
 
+import VueFirestore from 'vue-firestore'
+
 Vue.config.productionTip = false
+Vue.use(VueFirestore)
 Vue.use(MdButton)
 Vue.use(MdContent)
 Vue.use(MdCard)
