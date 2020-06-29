@@ -40,6 +40,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   background:#ffffff;
+  min-height: 100vh;
+  background-color:#f8f8ff;
 }
 
 #nav {

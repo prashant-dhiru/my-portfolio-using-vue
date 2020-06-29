@@ -1,15 +1,27 @@
 <template>
-  <div class="projects">
-    <h1>home</h1> 
-    <MainProject />
+  <div class="md-layout md-gutter">
+    <div v-for="project in projects" :key="project.key" class="md-layout-item md-size-50" >
+      <MainProject v-bind:projectDetails="project" class="card"></MainProject>
+    </div>
   </div>
 </template>
 
 <script>
 // import HelloWorld from '@/components/HelloWorld.vue'
 import MainProject from '@/components/MainComponents/MainProject.vue'
+import {db} from '@/firebase'
 export default {
   name: 'Projects',
+  data(){
+    return{
+      projects: []
+    }
+  },
+  firestore(){
+    return{
+      projects: db.collection('my-projects')
+    }
+  },
   components: {
     MainProject
   }
@@ -17,7 +29,7 @@ export default {
 </script>
 <style>
 .md-layout{
-  padding-left:30px;
-  padding-right: 30px;
+  padding-left:20px;
+  padding-right: 20px;
 }
 </style>
