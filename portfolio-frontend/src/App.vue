@@ -41,7 +41,7 @@ export default {
   color: #2c3e50;
   background:#ffffff;
   min-height: 100vh;
-  background-color:#f8f8ff;
+  background-color:#f1f1f1;
 }
 
 #nav {

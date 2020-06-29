@@ -19,7 +19,7 @@ export default {
   },
   firestore(){
     return{
-      projects: db.collection('my-projects')
+      projects: db.collection('my-projects').orderBy("year","desc")
     }
   },
   components: {

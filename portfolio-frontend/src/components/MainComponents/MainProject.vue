@@ -10,7 +10,7 @@
       </md-card-content>
 
       <md-card-actions  md-alignment="left">
-        <md-button :href="projectDetails.github" target="_blank" >GitHub Link</md-button>
+        <md-button :href="projectDetails.github" target="_blank" >Link</md-button>
       </md-card-actions>
     </md-card>
   </div>
@@ -30,6 +30,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .card{
-  margin-bottom: 30px;
+  margin-top: 20px;
 }
 </style>
