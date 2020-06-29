@@ -6,24 +6,29 @@
         <layout-left></layout-left>
       </div>  
       <div class="md-layout-item">
-        <HelloWorld msg="Welcome to Your Vue.js App"/>
+        <TabTop></TabTop>
+        <router-view/>
+        <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
       </div>  
     </div>
-    <router-view/>
+    
   </div>
 </template>
 <script>
 
 import HeaderMaterial from '@/components/HeaderMaterial.vue'
 import LayoutLeft from '@/components/LayoutLeft.vue'
-import HelloWorld from '@/components/HelloWorld.vue'
+import TabTop from '@/components/TabTop.vue'
+
+// import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    // HelloWorld,
     HeaderMaterial,
-    LayoutLeft
+    LayoutLeft,
+    TabTop
   }
 }
 </script>>
@@ -34,6 +39,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background:#ffffff;
 }
 
 #nav {
