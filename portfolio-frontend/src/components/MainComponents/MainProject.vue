@@ -21,7 +21,7 @@
 export default {
   name: 'ProjectComponet',
   props:{
-    projectDetails : []
+    projectDetails : Object
   }
 
 }

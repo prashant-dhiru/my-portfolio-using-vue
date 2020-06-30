@@ -10,18 +10,9 @@ module.exports = {
   parserOptions: {
     parser: 'babel-eslint'
   },
-  rules:[
+  rules:
     {
       'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
       'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
-    },
-    {
-      test: /\.scss$/,
-      use: [
-        'vue-style-loader',
-        'css-loader',
-        'sass-loader'
-      ]
     }
-  ]
 }

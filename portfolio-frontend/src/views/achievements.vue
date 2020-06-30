@@ -1,23 +1,35 @@
 <template>
-  <div class="home">
-    <h1>home</h1> 
-    <MainProject />
+  <div class="md-layout md-gutter">
+    <div v-for="achievement in achievements" :key="achievement.key" class="md-layout-item md-size-50" >
+      <MainAchievements v-bind:projectDetails="achievement" class="card"></MainAchievements>
+    </div>
   </div>
 </template>
 
 <script>
 // import HelloWorld from '@/components/HelloWorld.vue'
-import MainProject from '@/components/MainComponents/MainProject.vue'
+import MainAchievements from '@/components/MainComponents/MainAchievement.vue'
+import {db} from '@/firebase'
 export default {
-  name: 'Home',
+  name: 'Achievements',
+  data(){
+    return{
+      achievements: []
+    }
+  },
+  firestore(){
+    return{
+      achievements: db.collection('my-achievements')
+    }
+  },
   components: {
-    MainProject
+    MainAchievements
   }
 }
 </script>
 <style>
 .md-layout{
-  padding-left:30px;
-  padding-right: 30px;
+  padding-left:20px;
+  padding-right: 20px;
 }
 </style>

@@ -5,8 +5,8 @@
 <script>
 export default {
   name: 'MainPapers',
-  data(){
-    return{}
+  props:{
+    paperDetails : Object
   }
 }
 </script>

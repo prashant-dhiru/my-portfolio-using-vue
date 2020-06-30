@@ -1,12 +1,12 @@
 <template>
-  <div>Add acheviments</div>
+  <div>Add papers</div>
 </template>
 
 <script>
 export default {
-  name: 'MainAcheviments',
-  data(){
-    return{}
+  name: 'MainPapers',
+  props:{
+    achievementDetails : Object
   }
 }
 </script>
