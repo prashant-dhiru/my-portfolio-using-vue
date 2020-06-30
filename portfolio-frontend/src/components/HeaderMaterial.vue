@@ -31,7 +31,7 @@
           </div>
           <div class="md-layout-item md-xsmall-size-100">
           <md-card-header>
-            <div class='md-title'>5</div>
+            <div class='md-title'>4+2</div>
             <div class='md-subhead'><strong>Project</strong></div>
           </md-card-header>
           </div>

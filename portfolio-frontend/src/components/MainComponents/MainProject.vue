@@ -6,7 +6,7 @@
         <div class="md-subhead">{{projectDetails.year}}</div>
       </md-card-header>
 
-      <md-card-content>{{projectDetails.Description}}
+      <md-card-content>{{projectDetails.description}}
       </md-card-content>
 
       <md-card-actions  md-alignment="left">
