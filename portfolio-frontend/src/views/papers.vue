@@ -1,6 +1,6 @@
 <template>
   <div class="md-layout md-gutter">
-    <div v-for="paper in papers" :key="paper.key" class="md-layout-item md-size-50" >
+    <div v-for="paper in papers" :key="paper.key" class="md-layout-item md-size-50 md-small-size-100" >
       <MainPaper v-bind:paperDetails="paper" class="card"></MainPaper>
     </div>
   </div>
@@ -31,5 +31,8 @@ export default {
 .md-layout{
   padding-left:20px;
   padding-right: 20px;
+}
+.card{
+  margin-bottom: 20px;
 }
 </style>

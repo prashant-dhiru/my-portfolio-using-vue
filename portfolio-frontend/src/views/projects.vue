@@ -1,6 +1,6 @@
 <template>
   <div class="md-layout md-gutter">
-    <div v-for="project in projects" :key="project.key" class="md-layout-item md-size-50" >
+    <div v-for="project in projects" :key="project.key" class="md-layout-item md-size-50 md-small-size-100" >
       <MainProject v-bind:projectDetails="project" class="card"></MainProject>
     </div>
   </div>

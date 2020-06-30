@@ -1,6 +1,6 @@
 <template>
   <div class="md-layout md-gutter">
-    <div v-for="achievement in achievements" :key="achievement.key" class="md-layout-item md-size-50" >
+    <div v-for="achievement in achievements" :key="achievement.key" class="md-layout-item md-size-50 md-small-size-100" >
       <MainAchievements v-bind:achievementDetails="achievement" class="card"></MainAchievements>
     </div>
   </div>

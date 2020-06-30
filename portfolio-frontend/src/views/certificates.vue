@@ -1,6 +1,6 @@
 <template>
   <div class="md-layout md-gutter">
-    <div v-for="certificate in certificates" :key="certificate.key" class="md-layout-item md-size-50" >
+    <div v-for="certificate in certificates" :key="certificate.key" class="md-layout-item md-size-50 md-small-size-100" >
       <MainCertificate v-bind:certificateDetails="certificate" class="card"></MainCertificate>
     </div>
   </div>

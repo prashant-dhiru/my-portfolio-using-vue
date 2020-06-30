@@ -32,15 +32,15 @@
           <div class="md-layout-item md-xsmall-size-100">
           <md-card-header>
             <div class='md-title'>4+2</div>
-            <div class='md-subhead'><strong>Project</strong></div>
+            <div class='md-subhead'><strong>Project / Paper(draft)</strong></div>
           </md-card-header>
           </div>
-          <div class="md-layout-item md-xsmall-size-100">
+          <!-- <div class="md-layout-item md-xsmall-size-100">
           <md-card-header>
             <div class='md-title'><md-icon>file_copy</md-icon></div>
             <div class='md-subhead'><strong>Download Résumé</strong></div>
           </md-card-header>
-          </div>
+          </div> -->
         </div>
     </md-card>
     </div>
@@ -78,5 +78,6 @@ export default {
   min-height: 120px;
   border-radius: 30px;
   margin-left: 5%;
+
 }
 </style>
