@@ -6,8 +6,8 @@
       </md-card-header>
 
       <md-card-content class="md-card-content">
-        <p>I'm <strong> Prashant Dhirnedra</strong>, currently pursuing my <strong>Master's in Computer Application</strong> from <strong>Vellore Institute of Technology</strong>. I have completed my BCA from Pt.RSU. I have been enthusistic about System Design, Single Page Applications and Mechine Learning. </p>
-        <p>I'm also passionate about efficencey, so everyday I try to convert coffee into efficent algorithms.</p>
+        <p>I'm <strong> Prashant Dhirnedra</strong>, currently pursuing my <strong>Master's in Computer Application</strong> from <strong>Vellore Institute of Technology</strong>. I have completed my BCA from Pt.RSU. I have been enthusiastic about System Design, Single Page Applications and Machine Learning. </p>
+        <p>I'm also passionate about efficiency, so everyday I try to convert coffee into efficent algorithms.</p>
         <p>Also I'm trying hard to implement NPL techniques to grade short answers using Neural Networks </p>
       </md-card-content>
     </md-card>
