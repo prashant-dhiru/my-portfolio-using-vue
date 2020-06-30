@@ -1,23 +1,35 @@
 <template>
-  <div class="home">
-    <h1>home</h1> 
-    <MainProject />
+  <div class="md-layout md-gutter">
+    <div v-for="certificate in certificates" :key="certificate.key" class="md-layout-item md-size-50" >
+      <MainCertificate v-bind:certificateDetails="certificate" class="card"></MainCertificate>
+    </div>
   </div>
 </template>
 
 <script>
 // import HelloWorld from '@/components/HelloWorld.vue'
-import MainProject from '@/components/MainComponents/MainProject.vue'
+import MainCertificate from '@/components/MainComponents/MainCertificate.vue'
+import {db} from '@/firebase'
 export default {
-  name: 'Home',
+  name: 'Certificates',
+  data(){
+    return{
+      certificates: []
+    }
+  },
+  firestore(){
+    return{
+      certificates: db.collection('my-certificates')
+    }
+  },
   components: {
-    MainProject
+    MainCertificate
   }
 }
 </script>
 <style>
 .md-layout{
-  padding-left:30px;
-  padding-right: 30px;
+  padding-left:20px;
+  padding-right: 20px;
 }
 </style>

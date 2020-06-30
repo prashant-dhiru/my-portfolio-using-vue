@@ -16,7 +16,7 @@ Vue.use(VueRouter)
   },
   {
     path: '/papers',
-    name: 'About',
+    name: 'Papers',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -24,11 +24,13 @@ Vue.use(VueRouter)
   },
   {
     path: '/achievements',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/achievements.vue')
+    name: 'Achievements',
+    component: () => import('../views/achievements.vue')
+  },
+  {
+    path: '/certificates',
+    name: 'Certificates',
+    component: () => import('../views/certificates.vue')
   } 
 ]
 

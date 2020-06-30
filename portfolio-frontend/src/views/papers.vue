@@ -1,7 +1,7 @@
 <template>
   <div class="md-layout md-gutter">
     <div v-for="paper in papers" :key="paper.key" class="md-layout-item md-size-50" >
-      <MainPaper v-bind:projectDetails="paper" class="card"></MainPaper>
+      <MainPaper v-bind:paperDetails="paper" class="card"></MainPaper>
     </div>
   </div>
 </template>
