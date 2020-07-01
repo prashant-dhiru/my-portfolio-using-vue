@@ -7,4 +7,4 @@ Trying to learn vue.js by building my portfolio. This repo will act as the code 
 - [x] firestore integration
 - [x] host in heruko 
 - [ ] containerize the application with docker
-- [ ] impliment CI/CD pip
+- [ ] implement CI/CD pip
